@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bad+Script">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/gif" href="assets/animated_favicon.gif">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="todo">
+        <h1>My To Do List</h1>
+        <input type="text" placeholder="Add a task">
+        <ul class="todos">
+            <li><span class="todo-text">Clean the kitchen</span><span class="todo-trash"><i class="fas fa-trash-alt"></i></span></li>
+            <li><span class="todo-text">Wash the dishes</span><span class="todo-trash"><i class="fas fa-trash-alt"></i></span></li>
+        </ul>
+        <div id="buttons">
+            <button class="save">Save</button>
+            <button class="clear">Delete</button>
+            <button class="showTips">Info</button>
+        </div>
+    </div>
+    <div id="overlay">
+        <a href="javascript:void(0)" class="closeTips">&times;</a>
+        <ul class="tips">
+            <li>To add a to-do item, write text in the input field and press Enter.</li>
+            <li>To delete one item, hover over it and click on the trash icon.</li>
+            <li>To delete all to-do lists, click "Clear".</li>
+            <li>Click "Save" to save the to-do list for later.</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
